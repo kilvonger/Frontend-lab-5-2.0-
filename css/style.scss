@@ -148,3 +148,105 @@ body {
     }
 }
 }
+
+.page{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.block{
+    display: flex;
+    justify-content: space-between;
+    &-author{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    &-cover2{
+        &-demo{
+        background-color:darkcyan;
+        display: block;
+        width: 450px;
+        height: 570px;
+        background-repeat: no-repeat;
+        float:right;
+        margin: 250px 0 2px 0;
+        flex-basis: 500px;
+
+        
+        &__background{
+        background-image: url(../img/foto1.png);
+        display: block;
+        width: 400px;
+        height: 610px;
+        background-repeat: no-repeat;
+        float:right;
+        margin-top: 50px;
+        padding-right: 100px;
+        flex-basis: 500px;
+    }
+        }
+    }
+
+    &-text{
+        padding: 200px 0 300px 4px;
+        flex-basis: calc(100% - 500px);
+        &__name{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            letter-spacing: 0.7px;
+            margin-bottom: 30px;
+        }
+        span{
+            display: block;
+            color: $accent-color;
+            color: rgb(22, 213, 22);
+            margin-top: 5px;
+            letter-spacing: 0.9px;
+        }
+        &__title{
+            font-size: 48px;
+            letter-spacing: 0.7px;
+            margin-bottom: 5px;
+        }
+        &__text1{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            padding-top: 19px;
+        }
+        &__text2{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+        &__btn{
+            background-color: #78f382;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 6px;
+            padding: 14px 42px;
+            margin-bottom: 15px;
+            border: 1px solid #78f382;
+        }
+    }
+}
+.block-counter
+{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Slab', serif;
+    padding-bottom: 110px;
+    span{
+        display: block;
+            font-size: 70px;
+            color: $accent-color;
+            color: rgb(50, 230, 206);
+            margin-top: 5px;
+            letter-spacing: 0.9px;
+    }
+    p{
+        font-size: 18px;
+        text-align: center;
+        
+    }
+}
